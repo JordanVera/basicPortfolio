@@ -78,6 +78,7 @@ nav {
 	color: var(--background);
 	padding: 1rem;
 	margin: 0;
+	justify-content: center;
 }
 
 a {
@@ -85,22 +86,34 @@ a {
 	color: var(--mainFont);
 }
 
+
 #mainNav a:hover {
 	color: var(--teal);
 }
 
 
 #mainNav ul {
-	text-align: right;wewee
+	text-align: right;
 }
 
+#mainNav a {
+	margin: auto;
+	display: inline;
+}
 
 
 #mainNav li {
 	display: inline-block;
 	padding-left: 2rem;
 	padding-right: 2rem;
+	border-right: 1px solid var(--contentBorder);
 }
+
+.menuEnd {
+	border-right: 0px;
+}
+
+
 
 
 /* main body card */
@@ -111,12 +124,16 @@ a {
 	margin-right: auto;
 	margin-bottom: 5rem;
 	background: var(--background);
-	padding: 2rem;
+	padding: 1rem 2rem 2rem 2rem;
 }
 
 #mainBody h2 {
 	border-bottom: 2px solid var(--headerBorder);
 	padding-bottom: 1rem;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1rem;
 }
 
 /* footer */
@@ -163,16 +180,23 @@ textarea {
 
 .card {
 	position: relative;
-	
 }
 
 .gridContainer h4{
 	position: absolute;
+	left: -2rem;
 	color: var(--background);
 	padding: .6rem;
 	bottom: 2rem;
 	font-size: 2rem;
+	background: var(--teal);
+	width: 100%;
 }
+
+/* Media queries */
+
+
+
 
 
 
